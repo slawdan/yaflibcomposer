@@ -9,7 +9,7 @@
             "email": "schludern@gmail.com"
         }
     ],
-    "require": {
-        "composer/composer" : "*"
+    "extra": {
+        "class": "yaflibcomposer\\YafComposer\\Installer\\LibraryInstaller"
     }
 }
