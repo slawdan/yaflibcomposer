@@ -1,0 +1,15 @@
+{
+    "name": "slawdan/yaflibcomposer",
+    "description": "composer installer for yaf based framework",
+    "type" : "composer-installer",
+    "licence" : "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Rodin",
+            "email": "schludern@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/composer" : "*"
+    }
+}
