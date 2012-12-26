@@ -10,6 +10,6 @@
         }
     ],
     "extra": {
-        "class": "yaflibcomposer\\YafComposer\\Installer\\LibraryInstaller"
+        "class": "\\YafComposer\\Installer\\LibraryInstaller"
     }
 }
