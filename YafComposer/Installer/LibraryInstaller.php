@@ -23,13 +23,13 @@ class LibraryInstaller extends CI\LibraryInstaller
      * @param Composer    $composer
      * @param string      $type
      */
-    public function __construct(IOInterface $io, Composer $composer, $type = 'weibolib')
+    public function __construct($io, $composer, $type = 'weibolib')
     {
         parent::__construct($io, $composer, $type);
         $this->vendorDir = "./application/library"; 
     }
 
-    public function getInstallPath(PackageInterface $package)
+    public function getInstallPath($package)
     {
         $this->initializeVendorDir();
         $targetDir = $package->getTargetDir();
