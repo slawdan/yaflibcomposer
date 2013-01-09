@@ -1,6 +1,6 @@
 {
     "name": "slawdan/yaflibcomposer",
-    "description": "composer installer for yaf based framework",
+    "description": "composer installer for yaf based project",
     "type" : "composer-installer",
     "licence" : "BSD-3-Clause",
     "authors": [
@@ -9,6 +9,9 @@
             "email": "schludern@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-0": {"YafComposer": "./"}
+    },
     "extra": {
         "class": "\\YafComposer\\Installer\\LibraryInstaller"
     }
