@@ -9,6 +9,7 @@
 namespace YafComposer\Installer;
 
 use Composer\Installer as CI;
+use Composer\Package\PackageInterface;
 
 /**
  * Package installation manager.
@@ -29,7 +30,7 @@ class LibraryInstaller extends CI\LibraryInstaller
         $this->vendorDir = "./application/library"; 
     }
 
-    public function getInstallPath($package)
+    public function getInstallPath(PackageInterface $package)
     {
         $this->initializeVendorDir();
         $targetDir = $package->getTargetDir();
